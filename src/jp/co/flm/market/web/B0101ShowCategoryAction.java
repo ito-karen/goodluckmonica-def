@@ -34,7 +34,7 @@ public class B0101ShowCategoryAction {
         req.setAttribute("productlist", productlist);
 
         // 結果画面を戻り値に設定する。
-        page = "/product-result-view.jsp";
+        page = "product-result-view.jsp";
 
         } catch(MarketSystemException e) {
          // エラーメッセージを取得する。

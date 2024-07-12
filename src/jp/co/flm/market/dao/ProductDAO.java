@@ -115,7 +115,7 @@ public class ProductDAO {
         Category category = null;
 
         //SQL文
-        String sql = "SELECT category.categoryid, categoryname, product.picture, "
+        String sql = "SELECT category.categoryid, categoryname, product.picture, point, "
             + "product.productid, productname, price, quantity "
             + "FROM product INNER JOIN category "
             + "ON product.categoryid = category.categoryid "

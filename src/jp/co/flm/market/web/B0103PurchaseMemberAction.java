@@ -33,7 +33,7 @@ public class B0103PurchaseMemberAction {
     public String checkSession(HttpServletRequest req) {
         String page = null;
 
-        // セッションを取得（セッションがない場合、作成）する。
+        // セッションを取得する。
         HttpSession session = req.getSession(false);
 
         if (session == null) {
@@ -43,15 +43,19 @@ public class B0103PurchaseMemberAction {
             req.setAttribute("errorMessageList", errorMessageList);
             page = "error.jsp";
         } else {
-            // ショッピングカートを取得する。
-            ArrayList<Orders> cart = (ArrayList<Orders>) session.getAttribute("B01ShoppingCart");
-            // ショッピングカートができていない場合、エラーメッセージをリクエストスコープに格納する。
-            if (cart == null) {
-                ArrayList<String> errorMessageList = new ArrayList<String>();
-                errorMessageList.add("セッションが無効になりました。再度トップ画面から操作をやりなおしてください。");
-                req.setAttribute("errorMessageList", errorMessageList);
-                page = "error.jsp";
-            }
+//            // ショッピングカートを取得する。
+//            ArrayList<Orders> cart = (ArrayList<Orders>) session.getAttribute("B01ShoppingCart");
+//
+//           // ショッピングカートができていない場合、エラーメッセージをリクエストスコープに格納する。
+//            if (cart == null) {
+//                ArrayList<String> errorMessageList = new ArrayList<String>();
+//                errorMessageList.add("セッションが無効になりました。再度トップ画面から操作をやりなおしてください。");
+//                req.setAttribute("errorMessageList", errorMessageList);
+//
+//                page = "error.jsp";
+//
+//            }
+
         }
         return page;
     }
@@ -125,7 +129,7 @@ public class B0103PurchaseMemberAction {
                 HttpSession session = req.getSession(false);
 
                 // 会員情報をセッションへ格納する。
-                session.setAttribute("CommonLoginMember", member);      //commonloginmemberでよいか要確認
+                session.setAttribute("CommonLoginMember", member);
 
                 //ショッピングカートを取得する
                 ArrayList<Orders> cart = (ArrayList<Orders>) session.getAttribute("B01ShoppingCart");
