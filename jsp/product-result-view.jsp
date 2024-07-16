@@ -7,6 +7,11 @@
 <title>オンラインショップ</title>
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/css/style.css">
+<style>
+  .link{
+color: black; /* リンクの色を黒に設定 */
+}
+</style>
 </head>
 <body>
 	<jsp:include page="/jsp/header.jsp" />

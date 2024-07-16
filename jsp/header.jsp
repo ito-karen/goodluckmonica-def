@@ -1,7 +1,11 @@
 <!-- All Rights Reserved, Copyright(c) Fujitsu Learning Media Limited -->
 <%@ page pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
+<style>
+.header a {
+color: white; /* リンクの色を白に設定 */
+}
+</style>
 <div id="headerArea">
 	<div style="width: 400px; float: left;">
 		<h1 style="font-size: 1.25em; color: #ffffff; vertical-align: middle;">
@@ -18,8 +22,8 @@
       <c:if test="${CommonLoginMember == null}">
       <span>ようこそゲスト様</span>
       <br>
-        <a href="${pageContext.request.contextPath}/mserv?flag=CommonLogin">ログイン</a>
-        <a href="${pageContext.request.contextPath}/mserv?flag=B0201CheckEmailAction">会員登録</a>
+        <a class="header"  href="${pageContext.request.contextPath}/mserv?flag=CommonLogin">ログイン</a>
+        <a class="header"  href="${pageContext.request.contextPath}/mserv?flag=B0201CheckEmailAction">会員登録</a>
       </c:if>
 
 	</div>
