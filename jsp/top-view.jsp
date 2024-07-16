@@ -17,7 +17,9 @@ height: 100px; /* 画像の高さ */
 }
   .link{
 color: black; /* リンクの色を黒に設定 */
+
 }
+
 </style>
 </head>
 <body>

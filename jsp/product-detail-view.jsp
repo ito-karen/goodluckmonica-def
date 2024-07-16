@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/css/style.css">
 <style>
+
   .product-info {
     display: flex;
     flex-direction: column;

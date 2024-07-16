@@ -11,6 +11,7 @@
   .link{
 color: black; /* リンクの色を黒に設定 */
 }
+
 </style>
 </head>
 <body>

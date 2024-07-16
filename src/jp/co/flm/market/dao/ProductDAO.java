@@ -137,6 +137,7 @@ public class ProductDAO {
                 product.setProductId(res.getString("productid"));
                 product.setProductName(res.getString("productname"));
                 product.setPrice(res.getInt("price"));
+                product.setPoint(res.getInt("point"));
 
                 stock = new Stock();
                 stock.setQuantity(res.getInt("quantity"));
