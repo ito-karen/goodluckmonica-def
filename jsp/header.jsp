@@ -5,6 +5,9 @@
 .header a {
 color: white; /* リンクの色を白に設定 */
 }
+body {
+            font-family: Arial, sans-serif;
+        }
 </style>
 <div id="headerArea">
 	<div style="width: 400px; float: left;">

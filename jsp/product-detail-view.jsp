@@ -9,7 +9,9 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/css/style.css">
 <style>
-
+body {
+            font-family: Arial, sans-serif;
+        }
   .product-info {
     display: flex;
     flex-direction: column;
