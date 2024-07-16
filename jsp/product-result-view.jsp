@@ -13,6 +13,7 @@ color: black; /* リンクの色を黒に設定 */
 }
 body {
             font-family: Arial, sans-serif;
+
         }
 </style>
 </head>

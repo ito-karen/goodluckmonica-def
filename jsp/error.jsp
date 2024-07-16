@@ -8,6 +8,11 @@
 <title>オンラインショップ</title>
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/css/style.css">
+<style>
+body {
+            font-family: Arial, sans-serif;
+        }
+</style>
 </head>
 <body>
 	<jsp:include page="/jsp/header.jsp" />

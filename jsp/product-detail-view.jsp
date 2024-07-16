@@ -25,7 +25,7 @@ body {
     margin-left: 0; /* 同じスタート地点から表示 */
   }
   .blue-line {
-    border-top: 2px solid #6495ED;
+    border-top: 2px solid #0099ff;
     margin: 10px 0;
     width: 100%;
   }
